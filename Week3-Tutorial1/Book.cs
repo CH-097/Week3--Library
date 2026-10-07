@@ -8,6 +8,14 @@ namespace Library
         public string Author;
         public string ISBN;
 
+        // constructor
+        public Book(string bookTitle, string bookAuthor, string bookISBN)
+        {
+            this.Title = bookTitle;
+            this.Author = bookAuthor;
+            this.ISBN = bookISBN;
+        }
+
 
         //new method to display book information
         public void DisplayInfo()
@@ -17,8 +25,6 @@ namespace Library
             Console.WriteLine($"Book ISBN: {ISBN}");
             Console.WriteLine();
         }
-
-
 
 
     }

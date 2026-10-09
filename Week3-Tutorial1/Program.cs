@@ -1,31 +1,16 @@
-﻿/*
- * Week 3 tutorial
-*/ 
+﻿using Library;
 
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Create a new instance (object) of the Book class
+        // Note how the object name differs from the class name
+        Book book = new Book("C# for beginners", "Bill Gates", "1234567");
 
+        book.DisplayInfo();
 
-// create new Book object called 'book'
-// this object represents a copy of hte Book class, its the
-// new book instance
-
-using Library;
-
-Book book = new Book();
-
-// enter book information to the book object
-book.Title = "C# for Beginners";
-book.Author = "BillGates";
-book.ISBN = "12345678";
-
-//call method
-book.DisplayInfo();
-
-
-// another book object in our library
-// object must have unique name
-Book book1 = new Book();
-book1.Title = "C# Methods and classes";
-book1.Author = "Microsoft";
-book1.ISBN = "55667778";
-
-book1.DisplayInfo();
+        
+        
+    }
+}

@@ -1,14 +1,11 @@
-﻿
-
-namespace Library
+﻿namespace Library
 {
-    public class Book
+    class Book
     {
-        public string Title;
-        public string Author;
-        public string ISBN;
+        string Title;
+        string Author;
+        string ISBN;
 
-        // constructor
         public Book(string bookTitle, string bookAuthor, string bookISBN)
         {
             this.Title = bookTitle;
@@ -17,11 +14,10 @@ namespace Library
         }
 
 
-        //new method to display book information
         public void DisplayInfo()
         {
             Console.WriteLine($"Book title: {Title}");
-            Console.WriteLine($"Book author: {Author}");
+            Console.WriteLine($"Book Author: {Author}");
             Console.WriteLine($"Book ISBN: {ISBN}");
             Console.WriteLine();
         }
